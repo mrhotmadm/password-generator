@@ -37,7 +37,7 @@ function dragging() {
     var strength = 98 / range.value;
 
     text.innerHTML = "Length: " + range.value
-    chance.innerHTML = "Chance of being cracked: " +  strength + "/100";
+    chance.innerHTML = "Chance of being cracked: " +  strength / 100 + "/100";
     
     // if (range.value <= 1.8 && range.value != 1.3) {
     //     chance.innerHTML = "Chance of being Cracked: " +  strength + "/100 Strong";
