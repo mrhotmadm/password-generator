@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="password.js"></script>
+</head>
+<body>
+    <button onclick="compilePassword()">Generate</button>
+    <button onclick="copyText()">Copy</button>
+    <br>
+    <input type="text" id="placepass">
+    <input type="range" min="8" max="120" class="length" oninput="dragging()">
+    <input type="checkbox" id="specialcharacters" oninput="get()">
+    <h4 id="lengthshower">Length: 64</h4>
+    <h4 id="chanceofcracking">Chance of being cracked: 1.53125/100</h4>
+</body>
+</html>
